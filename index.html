@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="description" content="Short game to play snake">
+  <meta name="author" content="John Kyker">
+  <link rel="icon" href="img/icon.png"> 
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Snake</title>
+</head>
+
+<body onload="init();">
+<main>
+  <div class="interface">
+    <h1>Welcome to Snake!</h1>
+    <p>Use the arrow keys to control the snake and eat the tasty fruit. 
+    Every time you a fruit you gain length. Don't collide into the wall or yourself!</p>
+  </div>
+    <canvas id="myCanvas" width="400" height="400">
+    </canvas>
+    <div class="interface">
+      <h5>Player Score: <span id="playerScore"></span></h5>
+      <h5>High Score: <span id="highScore"></span></h5>
+      <h5>High Score Holder: <span id="hiName"></span></h5>
+      <button id="ResetBtn">Reset</button>
+    </div>
+</main>
+</body>
+<script src="js/script.js"></script>
+<script src="https://kit.fontawesome.com/80c1c40743.js" crossorigin="anonymous"></script>
+</html>
